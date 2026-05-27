@@ -1,0 +1,3264 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0F172A" />
+  <meta name="format-detection" content="telephone=yes" />
+
+  <title>Prego Systems · Sodobne spletne strani za vaše podjetje</title>
+  <meta name="description" content="Profesionalna spletna stran v 48 urah. Brez vnaprejšnjega plačila, brez vezave. Pokličite 031 271 317 za pogovor brez obveznosti." />
+
+  <link rel="canonical" href="https://modern.pregosystems.com/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="sl_SI" />
+  <meta property="og:site_name" content="Prego Systems" />
+  <meta property="og:url" content="https://modern.pregosystems.com/" />
+  <meta property="og:title" content="Prego Systems · Sodobne spletne strani v 48 urah" />
+  <meta property="og:description" content="Profesionalna spletna stran za slovenska podjetja. Predogled v 48 urah, plačilo po potrditvi." />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%234F46E5'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Outfit,sans-serif' font-size='42' font-weight='600' fill='%23FAFBFC'%3EP%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Prego Systems",
+    "legalName": "Žan Pregelj s.p.",
+    "description": "Sodobne spletne strani za obrtnike in manjša slovenska podjetja. Predogled v 48 urah, plačilo po potrditvi.",
+    "url": "https://modern.pregosystems.com/",
+    "telephone": "+386 31 271 317",
+    "email": "info@pregosystems.com",
+    "priceRange": "10 €/mesec – 25 €/mesec",
+    "areaServed": "Slovenija",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jakopičeva ulica 20",
+      "addressLocality": "Kamnik",
+      "postalCode": "1241",
+      "addressCountry": "SI"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "25"
+    }
+  }
+  </script>
+
+  <style>
+    /* =====================================================================
+       PREGO SYSTEMS · MODERN DEMO · modern.pregosystems.com
+       Style anchor: LEVEL 2 — MODERN (clean contemporary polish)
+       Palette: Cool minimalist · Typography: Modern sans-serif (Outfit + DM Sans)
+       Motion budget: smooth scroll, fade-in stagger on scroll, hover lift,
+                      pulsing CTA, animated SVG icons, counter animations,
+                      testimonials carousel, animated gradient hero,
+                      wave dividers, button ripples, success animation
+       ===================================================================== */
+
+    /* ---------- DESIGN TOKENS ---------- */
+    :root {
+      /* Color — Cool minimalist */
+      --bg-page:        #FAFBFC;
+      --bg-card:        #FFFFFF;
+      --bg-elevated:    #F1F4F8;
+      --bg-deep:        #0F172A;
+      --bg-deeper:      #060B19;
+      --ink-primary:    #0F172A;
+      --ink-secondary:  #475569;
+      --ink-muted:      #94A3B8;
+      --ink-on-dark:    #F8FAFC;
+      --accent:         #4F46E5;
+      --accent-deep:    #4338CA;
+      --accent-soft:    #E0E7FF;
+      --accent-glow:    rgba(79, 70, 229, 0.18);
+      --accent-2:       #06B6D4;
+      --accent-3:       #8B5CF6;
+      --border:         #E2E8F0;
+      --border-strong:  #CBD5E1;
+      --success:        #10B981;
+      --warning:        #F59E0B;
+      --error:          #EF4444;
+      --star:           #F59E0B;
+
+      /* Type */
+      --font-display: "Outfit", system-ui, -apple-system, sans-serif;
+      --font-body:    "DM Sans", system-ui, -apple-system, sans-serif;
+      --font-script:  "Caveat", cursive;
+
+      /* Scale */
+      --fs-display:   clamp(2.75rem, 4.8vw + 1rem, 5.5rem);
+      --fs-h1:        clamp(2.25rem, 3vw + 1rem, 3.75rem);
+      --fs-h2:        clamp(1.875rem, 1.6vw + 1rem, 2.75rem);
+      --fs-h3:        clamp(1.25rem, 0.5vw + 1rem, 1.5rem);
+      --fs-h4:        clamp(1.05rem, 0.2vw + 1rem, 1.15rem);
+      --fs-body:      clamp(1rem, 0.15vw + 0.95rem, 1.08rem);
+      --fs-lead:      clamp(1.1rem, 0.4vw + 0.95rem, 1.275rem);
+      --fs-small:     0.875rem;
+      --fs-meta:      0.78125rem;
+      --lh-tight:     1.05;
+      --lh-snug:      1.2;
+      --lh-normal:    1.55;
+      --lh-relaxed:   1.7;
+      --ls-display:   -0.03em;
+      --ls-heading:   -0.018em;
+      --ls-body:      -0.005em;
+      --ls-meta:      0.12em;
+
+      /* Layout */
+      --container:    1200px;
+      --container-narrow: 880px;
+      --gutter:       clamp(1.25rem, 3vw, 2.5rem);
+      --section-y:    clamp(4.5rem, 8vw, 7.5rem);
+
+      /* Radii & elevation */
+      --radius-sm:    6px;
+      --radius:       12px;
+      --radius-lg:    20px;
+      --radius-xl:    28px;
+      --radius-pill:  999px;
+      --hairline:     1px solid var(--border);
+      --hairline-strong: 1px solid var(--border-strong);
+      --shadow-sm:    0 1px 2px rgba(15, 23, 42, 0.04);
+      --shadow:       0 4px 6px -2px rgba(15, 23, 42, 0.05),
+                      0 12px 24px -12px rgba(15, 23, 42, 0.12);
+      --shadow-lg:    0 10px 20px -8px rgba(15, 23, 42, 0.10),
+                      0 30px 60px -30px rgba(15, 23, 42, 0.25);
+      --shadow-accent: 0 10px 30px -10px rgba(79, 70, 229, 0.40);
+
+      /* Motion */
+      --ease:         cubic-bezier(0.22, 0.61, 0.36, 1);
+      --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out:  cubic-bezier(0.4, 0, 0.2, 1);
+      --dur-fast:     180ms;
+      --dur:          280ms;
+      --dur-slow:     500ms;
+
+      /* Header heights */
+      --topbar-h:     38px;
+      --nav-h:        76px;
+
+      /* Z-index */
+      --z-grain:      1;
+      --z-nav:        50;
+      --z-mobile-menu: 60;
+      --z-floating:   70;
+      --z-lightbox:   90;
+      --z-skiplink:   100;
+    }
+
+    /* ---------- RESET + FOUNDATIONS ---------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-rendering: optimizeLegibility;
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--topbar-h) + var(--nav-h) + 1rem);
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: var(--fs-body);
+      line-height: var(--lh-relaxed);
+      color: var(--ink-primary);
+      background: var(--bg-page);
+      letter-spacing: var(--ls-body);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: "kern", "liga", "calt";
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+    body.is-locked { overflow: hidden; }
+
+    /* Grain texture overlay (N. — Modern subtle grain) */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: var(--z-grain);
+      opacity: 0.045;
+      background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.06 0 0 0 0 0.09 0 0 0 0 0.16 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      mix-blend-mode: multiply;
+    }
+
+    img, picture, svg, video {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    img { background: var(--bg-elevated); }
+
+    a {
+      color: var(--accent-deep);
+      text-underline-offset: 0.18em;
+    }
+    a:hover { color: var(--accent); }
+
+    button {
+      font: inherit;
+      border: none;
+      background: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      color: var(--ink-primary);
+      letter-spacing: var(--ls-display);
+      line-height: var(--lh-tight);
+      margin: 0;
+      font-weight: 600;
+    }
+    h1 { font-size: var(--fs-h1); }
+    h2 { font-size: var(--fs-h2); letter-spacing: var(--ls-heading); }
+    h3 { font-size: var(--fs-h3); letter-spacing: var(--ls-heading); font-weight: 600; }
+    h4 { font-size: var(--fs-h4); letter-spacing: -0.005em; font-weight: 600; }
+
+    p { margin: 0 0 1em; color: var(--ink-secondary); }
+    p:last-child { margin-bottom: 0; }
+
+    /* Eyebrow */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-body);
+      font-size: var(--fs-meta);
+      font-weight: 600;
+      letter-spacing: var(--ls-meta);
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-pill);
+      background: var(--accent-soft);
+    }
+    .eyebrow::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .lead {
+      font-size: var(--fs-lead);
+      line-height: var(--lh-normal);
+      color: var(--ink-secondary);
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 1rem;
+      background: var(--ink-primary);
+      color: var(--ink-on-dark);
+      padding: 0.75rem 1.25rem;
+      border-radius: var(--radius);
+      z-index: var(--z-skiplink);
+      font-weight: 600;
+      transition: top var(--dur) var(--ease-out);
+    }
+    .skip-link:focus { top: 1rem; outline: 3px solid var(--accent-soft); }
+
+    .container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+    .container--narrow { max-width: var(--container-narrow); }
+
+    section { padding-block: var(--section-y); position: relative; }
+    .section-head { max-width: 720px; margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+    .section-head--center { margin-inline: auto; text-align: center; }
+    .section-head .eyebrow { margin-bottom: 1rem; }
+    .section-head h2 { margin-bottom: 1rem; }
+
+    /* Wave divider (Q. — Modern wave dividers) */
+    .wave-divider {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      pointer-events: none;
+      z-index: var(--z-grain);
+    }
+    .wave-divider--top { top: 0; transform: scaleY(-1); }
+    .wave-divider--bottom { bottom: -1px; }
+    .wave-divider svg { width: 100%; height: 100%; display: block; }
+
+    /* ---------- FADE-IN ON SCROLL (P.2) ---------- */
+    .reveal {
+      opacity: 0.01;
+      transform: translateY(28px);
+      transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out);
+      will-change: opacity, transform;
+    }
+    .reveal.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal[data-stagger="1"] { transition-delay: 80ms; }
+    .reveal[data-stagger="2"] { transition-delay: 160ms; }
+    .reveal[data-stagger="3"] { transition-delay: 240ms; }
+    .reveal[data-stagger="4"] { transition-delay: 320ms; }
+    .reveal[data-stagger="5"] { transition-delay: 400ms; }
+    .reveal[data-stagger="6"] { transition-delay: 480ms; }
+
+    /* ---------- TOP BAR ---------- */
+    .top-bar {
+      background: var(--bg-deep);
+      color: var(--ink-on-dark);
+      font-size: var(--fs-meta);
+      letter-spacing: 0.06em;
+      height: var(--topbar-h);
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 51;
+    }
+    .top-bar__inner {
+      width: 100%;
+      max-width: var(--container);
+      margin-inline: auto;
+      padding-inline: var(--gutter);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .top-bar__status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-weight: 600;
+    }
+    .top-bar__dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.22);
+    }
+    .top-bar__status.is-closed .top-bar__dot { background: var(--error); box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.22); }
+    .top-bar__day-banner {
+      color: rgba(248, 250, 252, 0.72);
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+    .top-bar__phone {
+      color: var(--ink-on-dark);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .top-bar__phone:hover { color: var(--accent-soft); }
+    .top-bar__phone svg { width: 12px; height: 12px; display: inline-block; margin-right: 0.4rem; vertical-align: -1px; }
+    @media (max-width: 760px) {
+      .top-bar__day-banner { display: none; }
+    }
+
+    /* ---------- HEADER / NAV ---------- */
+    .site-header {
+      background: rgba(250, 251, 252, 0.85);
+      backdrop-filter: blur(12px) saturate(140%);
+      -webkit-backdrop-filter: blur(12px) saturate(140%);
+      border-bottom: var(--hairline);
+      position: sticky;
+      top: 0;
+      z-index: var(--z-nav);
+      transition: background-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out);
+    }
+    .site-header.is-elevated {
+      background: rgba(250, 251, 252, 0.95);
+      box-shadow: var(--shadow-sm);
+    }
+    .nav {
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .nav__brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--ink-primary);
+      opacity: 0.01;
+      animation: brand-fade-in 500ms var(--ease-out) 80ms forwards;
+    }
+    @keyframes brand-fade-in {
+      from { opacity: 0.01; transform: translateY(-3px); }
+      to   { opacity: 1;    transform: translateY(0); }
+    }
+    .nav__brand-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-3) 100%);
+      color: var(--ink-on-dark);
+      display: grid;
+      place-items: center;
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      box-shadow: 0 4px 12px -2px rgba(79, 70, 229, 0.40), inset 0 -2px 6px rgba(0,0,0,0.15);
+    }
+    .nav__brand-text {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    .nav__brand-sub {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-top: 3px;
+    }
+
+    .nav__primary {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+      margin-left: auto;
+    }
+    .nav__link {
+      color: var(--ink-primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      position: relative;
+      padding-block: 0.4rem;
+    }
+    .nav__link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform var(--dur) var(--ease-out);
+    }
+    .nav__link:hover::after,
+    .nav__link:focus-visible::after,
+    .nav__link.is-active::after { transform: scaleX(1); }
+
+    .nav__extras {
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+    }
+    .nav__phone {
+      color: var(--ink-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .nav__phone:hover { color: var(--accent); }
+    .nav__phone svg { width: 14px; height: 14px; }
+
+    .btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.5rem;
+      border-radius: var(--radius);
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.97rem;
+      letter-spacing: -0.005em;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: background-color var(--dur) var(--ease-out),
+                  color var(--dur) var(--ease-out),
+                  border-color var(--dur) var(--ease-out),
+                  box-shadow var(--dur) var(--ease-out),
+                  transform var(--dur) var(--ease-out);
+      white-space: nowrap;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .btn--primary {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
+      color: var(--ink-on-dark);
+      border-color: transparent;
+      box-shadow: var(--shadow-accent);
+    }
+    .btn--primary:hover,
+    .btn--primary:focus-visible {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 36px -10px rgba(79, 70, 229, 0.55);
+      color: var(--ink-on-dark);
+    }
+    .btn--primary:active { transform: translateY(0); }
+    .btn--ghost {
+      background: var(--bg-card);
+      color: var(--ink-primary);
+      border-color: var(--border-strong);
+    }
+    .btn--ghost:hover { border-color: var(--accent); color: var(--accent-deep); }
+    .btn--on-dark {
+      background: var(--bg-page);
+      color: var(--ink-primary);
+      border-color: var(--bg-page);
+    }
+    .btn--on-dark:hover { background: var(--accent-soft); color: var(--ink-primary); }
+    .btn--ghost-light {
+      background: transparent;
+      color: var(--ink-on-dark);
+      border-color: rgba(248, 250, 252, 0.3);
+    }
+    .btn--ghost-light:hover {
+      border-color: var(--ink-on-dark);
+      background: rgba(248, 250, 252, 0.08);
+      color: var(--ink-on-dark);
+    }
+    .btn--lg { padding: 1rem 1.85rem; font-size: 1rem; }
+    .btn--sm { padding: 0.55rem 1.05rem; font-size: 0.875rem; }
+    .btn--block { width: 100%; }
+    .btn .btn__icon { width: 16px; height: 16px; flex-shrink: 0; }
+
+    /* Pulsing CTA — Modern D.3 spec */
+    .btn--pulse {
+      position: relative;
+    }
+    .btn--pulse::after {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: var(--radius);
+      box-shadow: 0 0 0 0 var(--accent-glow);
+      pointer-events: none;
+      animation: cta-pulse 2.2s ease-out infinite;
+    }
+    @keyframes cta-pulse {
+      0%   { box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.45); }
+      70%  { box-shadow: 0 0 0 14px rgba(79, 70, 229, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(79, 70, 229, 0); }
+    }
+
+    /* Button ripple — Modern O.3 */
+    .btn .ripple {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.55);
+      transform: scale(0);
+      animation: ripple 600ms var(--ease-out);
+      pointer-events: none;
+    }
+    .btn--ghost .ripple,
+    .btn--on-dark .ripple { background: rgba(79, 70, 229, 0.18); }
+    @keyframes ripple {
+      to { transform: scale(4); opacity: 0; }
+    }
+
+    /* Hamburger (animated morph — B.2) */
+    .nav__hamburger {
+      display: none;
+      margin-left: auto;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      color: var(--ink-primary);
+      position: relative;
+    }
+    .nav__hamburger:hover { border-color: var(--accent); color: var(--accent); }
+    .hamburger-icon {
+      width: 22px;
+      height: 16px;
+      position: relative;
+    }
+    .hamburger-icon span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: currentColor;
+      border-radius: 1px;
+      transition: transform var(--dur) var(--ease-out), opacity var(--dur) var(--ease-out), top var(--dur) var(--ease-out);
+    }
+    .hamburger-icon span:nth-child(1) { top: 0; }
+    .hamburger-icon span:nth-child(2) { top: 7px; }
+    .hamburger-icon span:nth-child(3) { top: 14px; }
+    .nav__hamburger[aria-expanded="true"] .hamburger-icon span:nth-child(1) {
+      top: 7px; transform: rotate(45deg);
+    }
+    .nav__hamburger[aria-expanded="true"] .hamburger-icon span:nth-child(2) {
+      opacity: 0;
+    }
+    .nav__hamburger[aria-expanded="true"] .hamburger-icon span:nth-child(3) {
+      top: 7px; transform: rotate(-45deg);
+    }
+
+    /* Mobile menu */
+    .mobile-menu { display: none; }
+    @media (max-width: 960px) {
+      .nav__primary,
+      .nav__extras { display: none; }
+      .nav__hamburger { display: inline-flex; }
+      .mobile-menu {
+        position: fixed;
+        inset: calc(var(--topbar-h) + var(--nav-h)) 0 0 0;
+        background: var(--bg-page);
+        padding: 1.75rem var(--gutter) 2.5rem;
+        z-index: var(--z-mobile-menu);
+        flex-direction: column;
+        gap: 0.5rem;
+        overflow-y: auto;
+        border-top: var(--hairline);
+        opacity: 0;
+        transform: translateY(-8px);
+        transition: opacity var(--dur) var(--ease-out), transform var(--dur) var(--ease-out);
+        pointer-events: none;
+      }
+      .mobile-menu.is-open {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+      .mobile-menu__link {
+        display: block;
+        color: var(--ink-primary);
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: 600;
+        padding: 1rem 0.5rem;
+        border-bottom: var(--hairline);
+        font-family: var(--font-display);
+        letter-spacing: -0.015em;
+      }
+      .mobile-menu__cta { margin-top: 1.25rem; }
+      .mobile-menu__contact {
+        margin-top: auto;
+        padding-top: 2rem;
+        font-size: 0.95rem;
+        color: var(--ink-muted);
+      }
+      .mobile-menu__phone {
+        display: block;
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: var(--ink-primary);
+        margin-top: 0.5rem;
+        text-decoration: none;
+      }
+    }
+
+    /* ---------- HERO (animated gradient — D.1) ---------- */
+    .hero {
+      position: relative;
+      padding: 0;
+      min-height: clamp(640px, 92vh, 820px);
+      display: flex;
+      align-items: center;
+      color: var(--ink-on-dark);
+      isolation: isolate;
+      overflow: hidden;
+      background: #0F172A;
+    }
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(60% 80% at 15% 25%, rgba(99, 102, 241, 0.78) 0%, transparent 60%),
+        radial-gradient(55% 75% at 85% 20%, rgba(6, 182, 212, 0.62) 0%, transparent 55%),
+        radial-gradient(60% 80% at 75% 90%, rgba(139, 92, 246, 0.70) 0%, transparent 60%),
+        radial-gradient(40% 60% at 50% 50%, rgba(79, 70, 229, 0.35) 0%, transparent 70%),
+        linear-gradient(180deg, #0B1024 0%, #1E1B4B 50%, #0B1024 100%);
+      background-size: 200% 200%, 200% 200%, 200% 200%, 200% 200%, 100% 100%;
+      animation: hero-gradient 18s ease-in-out infinite alternate;
+    }
+    @keyframes hero-gradient {
+      0%   { background-position: 0% 0%,   100% 0%,   80% 100%, center; }
+      50%  { background-position: 30% 40%, 60% 30%,   60% 70%,  center; }
+      100% { background-position: 10% 80%, 80% 60%,   40% 90%,  center; }
+    }
+    .hero__bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at center bottom, rgba(15, 23, 42, 0.6) 0%, transparent 60%);
+    }
+    .hero__inner {
+      width: 100%;
+      max-width: var(--container);
+      margin-inline: auto;
+      padding-inline: var(--gutter);
+      padding-block: clamp(5.5rem, 12vw, 8.5rem);
+      position: relative;
+      z-index: 2;
+    }
+    .hero__eyebrow {
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--ink-on-dark);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      opacity: 0.01;
+      animation: hero-fade-in 800ms var(--ease-out) 200ms forwards;
+    }
+    .hero__eyebrow::before { background: var(--ink-on-dark); }
+    .hero__title {
+      font-size: var(--fs-display);
+      color: var(--ink-on-dark);
+      max-width: 20ch;
+      margin: 0 0 1.5rem;
+      line-height: 1.02;
+      letter-spacing: -0.035em;
+      font-weight: 700;
+      opacity: 0.01;
+      animation: hero-fade-in 1000ms var(--ease-out) 350ms forwards;
+    }
+    .hero__title .hero__title-accent {
+      background: linear-gradient(135deg, #A5B4FC 0%, #67E8F9 50%, #C4B5FD 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+    .hero__script{font-family:var(--font-script);font-size:clamp(1.6rem,2.5vw + 1rem,2.6rem);color:#A5B4FC;display:block;margin:.4rem 0 1.5rem;transform:rotate(-3deg);font-weight:600;line-height:1;opacity:.01;animation:hero-fade-in 1.1s var(--ease-out) 600ms forwards}
+    .hero__subhead {
+      font-family: var(--font-body);
+      font-size: var(--fs-lead);
+      color: rgba(248, 250, 252, 0.85);
+      max-width: 44ch;
+      margin: 0 0 2.5rem;
+      line-height: 1.5;
+      opacity: 0.01;
+      animation: hero-fade-in 1000ms var(--ease-out) 500ms forwards;
+    }
+    @keyframes hero-fade-in {
+      from { opacity: 0.01; transform: translateY(16px); }
+      to   { opacity: 1;    transform: translateY(0); }
+    }
+    .hero__ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 3rem;
+      opacity: 0.01;
+      animation: hero-fade-in 1000ms var(--ease-out) 650ms forwards;
+    }
+    .hero__stats {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: clamp(1.5rem, 4vw, 3rem);
+      padding-top: 2rem;
+      border-top: 1px solid rgba(248, 250, 252, 0.18);
+      max-width: 600px;
+      opacity: 0.01;
+      animation: hero-fade-in 1000ms var(--ease-out) 800ms forwards;
+    }
+    .hero__stat-value {
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 2vw + 1rem, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      color: var(--ink-on-dark);
+      line-height: 1;
+      margin: 0;
+    }
+    .hero__stat-label {
+      display: block;
+      margin-top: 0.4rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      color: rgba(248, 250, 252, 0.7);
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .hero__scroll {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(248, 250, 252, 0.65);
+      font-size: 0.74rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      z-index: 3;
+    }
+    .hero__scroll-arrow {
+      width: 22px;
+      height: 22px;
+      animation: bounce 1.6s ease-in-out infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(-3px); }
+      50%      { transform: translateY(5px); }
+    }
+    .hero__scroll.is-hidden { opacity: 0; pointer-events: none; transition: opacity 300ms; }
+
+    /* ---------- PROBLEM SECTION ---------- */
+    .problem {
+      position: relative;
+      background: var(--bg-page);
+    }
+    .problem__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .problem-card {
+      background: var(--bg-card);
+      border: var(--hairline);
+      padding: clamp(1.75rem, 3vw, 2.5rem);
+      border-radius: var(--radius-lg);
+      transition: transform var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out), border-color var(--dur) var(--ease-out);
+    }
+    .problem-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 60px -20px rgba(79,70,229,.35), 0 8px 20px -8px rgba(15,23,42,.18);
+      border-color: var(--accent);
+    }
+    .problem-card__icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--accent-soft) 0%, rgba(228, 233, 255, 0.4) 100%);
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+    .problem-card__icon svg { width: 26px; height: 26px; }
+    .problem-card h3 {
+      margin-bottom: 0.85rem;
+    }
+    .problem-card p {
+      font-size: 1rem;
+      line-height: var(--lh-relaxed);
+    }
+    @media (max-width: 880px) {
+      .problem__grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- ABOUT ---------- */
+    .about__grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: clamp(2.5rem, 6vw, 5rem);
+      align-items: center;
+    }
+    .about__media {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 3 / 4;
+      background: var(--bg-elevated);
+    }
+    .about__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .about__media::after {
+      content: "";
+      position: absolute;
+      right: -16px;
+      bottom: -16px;
+      width: 50%;
+      height: 50%;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-3) 100%);
+      z-index: -1;
+      border-radius: var(--radius-xl);
+      opacity: 0.6;
+      filter: blur(12px);
+    }
+    .about__stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2.5rem;
+      padding-top: 2.5rem;
+      border-top: var(--hairline);
+    }
+    .about__stat-value {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 2vw + 1rem, 2.75rem);
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      color: var(--accent);
+      line-height: 1;
+      margin: 0;
+    }
+    .about__stat-label {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--ink-secondary);
+      font-weight: 500;
+    }
+    @media (max-width: 880px) {
+      .about__grid { grid-template-columns: 1fr; gap: 2rem; }
+      .about__media { max-width: 460px; }
+      .about__stats { grid-template-columns: 1fr; gap: 1.5rem; padding-top: 1.5rem; margin-top: 1.5rem; }
+    }
+
+    /* ---------- SERVICES (lift+shadow on hover, animated SVG, per-card CTA) ---------- */
+    .services {
+      background: var(--bg-elevated);
+      position: relative;
+    }
+    .services__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: var(--bg-card);
+      border: var(--hairline);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out), border-color var(--dur) var(--ease-out);
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 30px 70px -20px rgba(79,70,229,.40), 0 10px 24px -10px rgba(15,23,42,.20);
+      border-color: var(--accent);
+    }
+    .service-card__media {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      background: var(--bg-elevated);
+      position: relative;
+    }
+    .service-card__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--dur-slow) var(--ease-out);
+    }
+    .service-card:hover .service-card__media img {
+      transform: scale(1.05);
+    }
+    .service-card__icon {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(6px);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      box-shadow: var(--shadow);
+    }
+    .service-card__icon svg { width: 22px; height: 22px; transition: transform var(--dur) var(--ease-out); }
+    .service-card:hover .service-card__icon svg { transform: rotate(8deg) scale(1.08); }
+    .service-card__body {
+      padding: 1.5rem 1.5rem 1.75rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .service-card__num {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+    .service-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.65rem;
+    }
+    .service-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      flex-grow: 1;
+      margin: 0 0 1.25rem;
+    }
+    .service-card__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--accent-deep);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: gap var(--dur) var(--ease-out), color var(--dur) var(--ease-out);
+    }
+    .service-card__cta:hover { gap: 0.7rem; color: var(--accent); }
+    .service-card__cta svg { width: 14px; height: 14px; transition: transform var(--dur) var(--ease-out); }
+    .service-card__cta:hover svg { transform: translateX(2px); }
+    @media (max-width: 1080px) {
+      .services__grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 540px) {
+      .services__grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- PROCESS ---------- */
+    .process__list {
+      counter-reset: step;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+    }
+    .process-step {
+      padding: 1.75rem 1.5rem;
+      background: var(--bg-card);
+      border: var(--hairline);
+      border-radius: var(--radius-lg);
+      position: relative;
+      transition: transform var(--dur) var(--ease-out), border-color var(--dur) var(--ease-out);
+    }
+    .process-step:hover { transform: translateY(-3px); border-color: var(--accent-soft); }
+    .process-step__num {
+      counter-increment: step;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-3) 100%);
+      color: var(--ink-on-dark);
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow-accent);
+    }
+    .process-step__num::before { content: counter(step, decimal-leading-zero); }
+    .process-step h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .process-step p {
+      font-size: 0.93rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+    @media (max-width: 880px) {
+      .process__list { grid-template-columns: 1fr; gap: 1rem; }
+    }
+
+    /* ---------- GALLERY (Masonry) ---------- */
+    .gallery {
+      background: var(--bg-page);
+    }
+    .gallery__grid {
+      column-count: 3;
+      column-gap: 1.25rem;
+    }
+    @media (max-width: 880px) {
+      .gallery__grid { column-count: 2; column-gap: 1rem; }
+    }
+    @media (max-width: 540px) {
+      .gallery__grid { column-count: 1; }
+    }
+    .gallery-item {
+      display: block;
+      width: 100%;
+      margin-bottom: 1.25rem;
+      break-inside: avoid;
+      background: var(--bg-card);
+      border: var(--hairline);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      cursor: zoom-in;
+      transition: transform var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out), border-color var(--dur) var(--ease-out);
+      position: relative;
+    }
+    .gallery-item:hover,
+    .gallery-item:focus-visible {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-soft);
+      outline: none;
+    }
+    .gallery-item__media {
+      display: block;
+      overflow: hidden;
+      background: var(--bg-elevated);
+    }
+    .gallery-item__media img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform var(--dur-slow) var(--ease-out);
+    }
+    .gallery-item:hover .gallery-item__media img { transform: scale(1.06); }
+    .gallery-item__caption {
+      padding: 1rem 1.25rem 1.15rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.93rem;
+      color: var(--ink-primary);
+      font-weight: 600;
+    }
+    .gallery-item__zoom {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .gallery-item__zoom svg { width: 14px; height: 14px; }
+
+    /* Set heterogeneous heights for masonry feel via aspect-ratio variants */
+    .gallery-item:nth-child(1) .gallery-item__media img { aspect-ratio: 16 / 11; object-fit: cover; }
+    .gallery-item:nth-child(2) .gallery-item__media img { aspect-ratio: 4 / 5; object-fit: cover; }
+    .gallery-item:nth-child(3) .gallery-item__media img { aspect-ratio: 1 / 1; object-fit: cover; }
+    .gallery-item:nth-child(4) .gallery-item__media img { aspect-ratio: 3 / 4; object-fit: cover; }
+    .gallery-item:nth-child(5) .gallery-item__media img { aspect-ratio: 16 / 9; object-fit: cover; }
+    .gallery-item:nth-child(6) .gallery-item__media img { aspect-ratio: 4 / 5; object-fit: cover; }
+
+    /* ---------- INSTAGRAM / SOCIAL FEED (H) ---------- */
+    .social {
+      background: var(--bg-page);
+    }
+    .social__handle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color var(--dur) var(--ease-out);
+    }
+    .social__handle:hover { color: var(--ink-primary); }
+    .social__handle svg { width: 18px; height: 18px; }
+    .social__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-top: 0.5rem;
+    }
+    @media (max-width: 880px) {
+      .social__grid { gap: 1rem; }
+    }
+    @media (max-width: 540px) {
+      .social__grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    }
+    .social-tile {
+      position: relative;
+      display: block;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      border: var(--hairline);
+      background: var(--bg-elevated);
+      text-decoration: none;
+      transition: transform var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out), border-color var(--dur) var(--ease-out);
+    }
+    .social-tile:hover,
+    .social-tile:focus-visible {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-soft);
+      outline: none;
+    }
+    .social-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform var(--dur-slow) var(--ease-out);
+    }
+    .social-tile:hover img,
+    .social-tile:focus-visible img { transform: scale(1.06); }
+    .social-tile__overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      background: linear-gradient(180deg, rgba(15,18,32,0) 0%, rgba(15,18,32,0.55) 100%);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.92rem;
+      opacity: 0;
+      transition: opacity var(--dur) var(--ease-out);
+    }
+    .social-tile:hover .social-tile__overlay,
+    .social-tile:focus-visible .social-tile__overlay { opacity: 1; }
+    .social-tile__stat {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .social-tile__stat svg { width: 18px; height: 18px; fill: currentColor; stroke: none; }
+    .social__cta {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    /* ---------- TESTIMONIALS CAROUSEL (I.1) ---------- */
+    .testimonials {
+      background: var(--bg-elevated);
+      position: relative;
+      overflow: hidden;
+    }
+    .carousel {
+      position: relative;
+      max-width: 880px;
+      margin-inline: auto;
+    }
+    .carousel__viewport {
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+    }
+    .carousel__track {
+      display: flex;
+      transition: transform 600ms var(--ease-out);
+      will-change: transform;
+    }
+    .carousel__slide {
+      min-width: 100%;
+      padding: clamp(2rem, 4vw, 3.5rem);
+      background: var(--bg-card);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius-xl);
+    }
+    .carousel__rating {
+      display: flex;
+      gap: 0.2rem;
+      margin-bottom: 1.25rem;
+      color: var(--star);
+    }
+    .carousel__rating svg { width: 20px; height: 20px; }
+    .carousel__quote {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 1vw + 1rem, 1.65rem);
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: -0.018em;
+      color: var(--ink-primary);
+      margin: 0 0 1.75rem;
+    }
+    .carousel__quote::before { content: "“"; font-size: 1.6em; line-height: 0; vertical-align: -0.35em; margin-right: 0.15em; color: var(--accent); }
+    .carousel__quote::after { content: "”"; font-size: 1.6em; line-height: 0; vertical-align: -0.35em; margin-left: 0.05em; color: var(--accent); }
+    .carousel__author {
+      font-weight: 600;
+      color: var(--ink-primary);
+    }
+    .carousel__author-business {
+      display: block;
+      margin-top: 0.2rem;
+      font-size: 0.9rem;
+      color: var(--ink-muted);
+      font-weight: 500;
+    }
+    .carousel__controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .carousel__btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--ink-primary);
+      display: grid;
+      place-items: center;
+      box-shadow: var(--shadow-sm);
+      transition: border-color var(--dur) var(--ease-out), color var(--dur) var(--ease-out), transform var(--dur) var(--ease-out);
+    }
+    .carousel__btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .carousel__btn svg { width: 18px; height: 18px; }
+    .carousel__dots {
+      display: flex;
+      gap: 0.4rem;
+      padding-inline: 0.5rem;
+    }
+    .carousel__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--border-strong);
+      border: none;
+      padding: 0;
+      transition: background-color var(--dur), width var(--dur);
+    }
+    .carousel__dot.is-active {
+      background: var(--accent);
+      width: 24px;
+      border-radius: 4px;
+    }
+
+    /* ---------- PRICING CARDS ---------- */
+    .pricing {
+      background: var(--bg-page);
+    }
+    .pricing__toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: var(--bg-elevated);
+      padding: 0.35rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: 2.5rem;
+    }
+    .pricing__toggle button {
+      padding: 0.55rem 1.25rem;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--ink-secondary);
+      transition: background-color var(--dur), color var(--dur);
+    }
+    .pricing__toggle button.is-active {
+      background: var(--bg-card);
+      color: var(--ink-primary);
+      box-shadow: var(--shadow-sm);
+    }
+    .pricing__toggle button:hover:not(.is-active) { color: var(--ink-primary); }
+    .pricing__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .pricing-card {
+      background: var(--bg-card);
+      border: var(--hairline);
+      border-radius: var(--radius-xl);
+      padding: clamp(1.75rem, 3vw, 2.5rem);
+      display: flex;
+      flex-direction: column;
+      transition: transform var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out);
+    }
+    .pricing-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .pricing-card.is-featured {
+      background: linear-gradient(180deg, var(--bg-card) 0%, #F4F4FF 100%);
+      border-color: var(--accent);
+      box-shadow: var(--shadow-accent);
+      position: relative;
+    }
+    .pricing-card.is-featured::before {
+      content: "Najpogosteje izbrani";
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-3) 100%);
+      color: var(--ink-on-dark);
+      font-size: 0.74rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.95rem;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      white-space: nowrap;
+      box-shadow: var(--shadow-accent);
+    }
+    .pricing-card__name {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .pricing-card__from {
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    .pricing-card__price {
+      font-family: var(--font-display);
+      font-size: clamp(2.25rem, 1.5vw + 1.5rem, 2.85rem);
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      color: var(--ink-primary);
+      line-height: 1;
+      margin: 0 0 1.5rem;
+    }
+    .pricing-card__price-sub {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--ink-muted);
+      letter-spacing: 0;
+      margin-left: 0.25rem;
+    }
+    .pricing-card__list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      flex-grow: 1;
+    }
+    .pricing-card__list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.97rem;
+      color: var(--ink-secondary);
+    }
+    .pricing-card__list svg {
+      width: 18px;
+      height: 18px;
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .pricing__footnote {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 0.92rem;
+      color: var(--ink-muted);
+    }
+    @media (max-width: 1080px) {
+      .pricing__grid { grid-template-columns: 1fr; max-width: 560px; margin-inline: auto; }
+    }
+
+    /* ---------- FAQ ---------- */
+    .faq {
+      background: var(--bg-elevated);
+    }
+    .faq__list {
+      max-width: 760px;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .faq-item {
+      background: var(--bg-card);
+      border: var(--hairline);
+      border-radius: var(--radius-lg);
+      transition: border-color var(--dur), box-shadow var(--dur);
+    }
+    .faq-item[open] { border-color: var(--accent-soft); box-shadow: var(--shadow); }
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 1.35rem 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      font-family: var(--font-display);
+      font-size: clamp(1.05rem, 0.3vw + 1rem, 1.2rem);
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      color: var(--ink-primary);
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary:hover { color: var(--accent-deep); }
+    .faq-item__icon {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      transition: transform var(--dur) var(--ease-out), background-color var(--dur);
+    }
+    .faq-item__icon svg { width: 14px; height: 14px; }
+    .faq-item[open] .faq-item__icon { transform: rotate(45deg); background: var(--accent); color: var(--ink-on-dark); }
+    .faq-item__body {
+      padding: 0 1.75rem 1.5rem;
+      color: var(--ink-secondary);
+      font-size: 0.99rem;
+      line-height: var(--lh-relaxed);
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2.5rem, 5vw, 4rem);
+    }
+    .contact__details h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .contact__list {
+      list-style: none;
+      margin: 0 0 2rem;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+    .contact__list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+    }
+    .contact__icon {
+      width: 40px;
+      height: 40px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+    .contact__icon svg { width: 18px; height: 18px; }
+    .contact__list dt {
+      font-size: var(--fs-meta);
+      letter-spacing: var(--ls-meta);
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+    }
+    .contact__list dd {
+      margin: 0;
+    }
+    .contact__list a {
+      color: var(--ink-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .contact__list a:hover { color: var(--accent-deep); }
+    .contact__map {
+      margin-top: 2rem;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 4 / 3;
+      background: var(--bg-elevated);
+    }
+    .contact__map iframe { width: 100%; height: 100%; border: 0; }
+
+    .contact__form {
+      background: var(--bg-card);
+      border: var(--hairline);
+      border-radius: var(--radius-xl);
+      padding: clamp(1.75rem, 3vw, 2.5rem);
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+    .contact__form h3 {
+      font-size: 1.5rem;
+      margin: 0 0 1.5rem;
+    }
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      margin-bottom: 1.1rem;
+    }
+    .field label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ink-primary);
+    }
+    .field input, .field textarea {
+      font: inherit;
+      font-size: 1rem;
+      padding: 0.8rem 1rem;
+      background: var(--bg-page);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius);
+      color: var(--ink-primary);
+      transition: border-color var(--dur), box-shadow var(--dur), background-color var(--dur);
+    }
+    .field input:focus, .field textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      background: var(--bg-card);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+    .field textarea { min-height: 120px; resize: vertical; line-height: 1.5; }
+    .form__consent {
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+      margin: 0 0 1.5rem;
+      line-height: 1.5;
+    }
+    .form__consent a { color: var(--accent-deep); }
+    .form__submit { width: 100%; }
+
+    /* Success animation overlay */
+    .form__success {
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(6px);
+      border-radius: var(--radius-xl);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 1rem;
+      padding: 2rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 400ms var(--ease-out);
+    }
+    .form__success.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .form__success-check {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--success);
+      color: white;
+      display: grid;
+      place-items: center;
+      animation: success-pop 500ms var(--ease-out) backwards;
+    }
+    @keyframes success-pop {
+      0%   { transform: scale(0); opacity: 0; }
+      60%  { transform: scale(1.15); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    .form__success-check svg { width: 32px; height: 32px; }
+    .form__success h4 { font-size: 1.4rem; }
+    .form__success p { margin: 0; }
+
+    @media (max-width: 960px) {
+      .contact__grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--bg-deep);
+      color: var(--ink-on-dark);
+      padding-block: clamp(3.5rem, 6vw, 5rem) 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .site-footer::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(40% 60% at 80% 0%, rgba(79, 70, 229, 0.18) 0%, transparent 60%),
+        radial-gradient(30% 50% at 10% 100%, rgba(139, 92, 246, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .footer__top {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr 1.1fr;
+      gap: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    .footer__brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: inherit;
+      margin-bottom: 1.25rem;
+    }
+    .footer__brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-3) 100%);
+      color: var(--ink-on-dark);
+      display: grid;
+      place-items: center;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      box-shadow: var(--shadow-accent);
+    }
+    .footer__brand-text {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .footer__about {
+      color: rgba(248, 250, 252, 0.74);
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin: 0 0 1.5rem;
+      max-width: 32ch;
+    }
+    .footer__col h4 {
+      font-family: var(--font-body);
+      font-size: var(--fs-meta);
+      font-weight: 600;
+      letter-spacing: var(--ls-meta);
+      color: var(--accent-soft);
+      text-transform: uppercase;
+      margin: 0 0 1.25rem;
+    }
+    .footer__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .footer__list a {
+      color: rgba(248, 250, 252, 0.85);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color var(--dur);
+    }
+    .footer__list a:hover { color: var(--accent-soft); }
+    .footer__contact dt {
+      font-size: var(--fs-meta);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(248, 250, 252, 0.55);
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+    }
+    .footer__contact dd {
+      margin: 0 0 0.85rem;
+      color: var(--ink-on-dark);
+    }
+    .footer__contact a {
+      color: inherit;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .footer__contact a:hover { color: var(--accent-soft); }
+    .newsletter h4 { color: var(--accent-soft); }
+    .newsletter p {
+      color: rgba(248, 250, 252, 0.72);
+      font-size: 0.92rem;
+      margin: 0 0 1rem;
+      line-height: 1.55;
+    }
+    .newsletter__form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .newsletter__form input {
+      font: inherit;
+      font-size: 0.95rem;
+      padding: 0.75rem 1rem;
+      background: rgba(248, 250, 252, 0.08);
+      border: 1px solid rgba(248, 250, 252, 0.18);
+      border-radius: var(--radius);
+      color: var(--ink-on-dark);
+    }
+    .newsletter__form input::placeholder { color: rgba(248, 250, 252, 0.45); }
+    .newsletter__form input:focus {
+      outline: none;
+      border-color: var(--accent-soft);
+      background: rgba(248, 250, 252, 0.12);
+    }
+    .newsletter__form button { width: 100%; }
+    .newsletter__consent {
+      font-size: 0.75rem;
+      color: rgba(248, 250, 252, 0.5);
+      margin: 0;
+    }
+    .footer__bottom {
+      border-top: 1px solid rgba(248, 250, 252, 0.12);
+      padding-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: rgba(248, 250, 252, 0.6);
+      position: relative;
+    }
+    .footer__legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer__legal a {
+      color: rgba(248, 250, 252, 0.78);
+      text-decoration: none;
+    }
+    .footer__legal a:hover { color: var(--accent-soft); }
+    .footer__social {
+      display: flex;
+      gap: 0.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer__social a {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(248, 250, 252, 0.2);
+      color: rgba(248, 250, 252, 0.78);
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      transition: border-color var(--dur), color var(--dur);
+    }
+    .footer__social a:hover { color: var(--accent-soft); border-color: var(--accent-soft); }
+    .footer__social svg { width: 16px; height: 16px; }
+    @media (max-width: 960px) {
+      .footer__top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .footer__top { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- FLOATING ---------- */
+    .sticky-call {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: var(--z-floating);
+      display: none;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.9rem 1.35rem;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
+      color: var(--ink-on-dark);
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: var(--shadow-accent);
+    }
+    .sticky-call svg { width: 18px; height: 18px; }
+    .sticky-call.is-visible { display: inline-flex; }
+    @media (min-width: 961px) {
+      .sticky-call { display: none !important; }
+    }
+
+    .back-to-top {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: var(--z-floating);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      color: var(--ink-primary);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow);
+    }
+    .back-to-top.is-visible { display: inline-flex; }
+    .back-to-top svg { width: 18px; height: 18px; }
+    @media (max-width: 960px) {
+      .back-to-top { bottom: 4.5rem; }
+    }
+
+    /* Floating Google review badge — R */
+    .review-badge {
+      position: fixed;
+      left: 1rem;
+      bottom: 1rem;
+      z-index: var(--z-floating);
+      background: var(--bg-card);
+      border: var(--hairline);
+      border-radius: 14px;
+      box-shadow: var(--shadow-lg);
+      padding: 0.65rem 0.9rem;
+      display: none;
+      align-items: center;
+      gap: 0.65rem;
+      max-width: 220px;
+      text-decoration: none;
+      color: var(--ink-primary);
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity var(--dur), transform var(--dur);
+    }
+    .review-badge.is-visible {
+      display: inline-flex;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (max-width: 760px) {
+      .review-badge { display: none !important; }
+    }
+    .review-badge__g {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bg-elevated);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+    .review-badge__g svg { width: 20px; height: 20px; }
+    .review-badge__main {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+    .review-badge__stars {
+      display: flex;
+      gap: 1px;
+      color: var(--star);
+      margin-bottom: 2px;
+    }
+    .review-badge__stars svg { width: 12px; height: 12px; }
+    .review-badge__rating {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--ink-primary);
+    }
+    .review-badge__rating-label {
+      font-size: 0.74rem;
+      color: var(--ink-muted);
+    }
+
+    /* ---------- LIGHTBOX ---------- */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.94);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: var(--z-lightbox);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(1rem, 3vw, 3rem);
+      opacity: 0;
+      transition: opacity var(--dur-fast) var(--ease-out);
+    }
+    .lightbox.is-open { display: flex; opacity: 1; }
+    .lightbox__inner {
+      position: relative;
+      max-width: 1200px;
+      max-height: 86vh;
+      width: 100%;
+      transform: scale(0.96);
+      transition: transform var(--dur-fast) var(--ease-out);
+    }
+    .lightbox.is-open .lightbox__inner { transform: scale(1); }
+    .lightbox__img {
+      width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+    }
+    .lightbox__caption {
+      color: var(--ink-on-dark);
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+    .lightbox__close {
+      position: absolute;
+      top: -2.5rem;
+      right: -0.25rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(248, 250, 252, 0.12);
+      color: var(--ink-on-dark);
+      display: grid;
+      place-items: center;
+    }
+    .lightbox__close:hover { background: rgba(248, 250, 252, 0.25); }
+    .lightbox__close svg { width: 18px; height: 18px; }
+    .lightbox__nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(248, 250, 252, 0.12);
+      color: var(--ink-on-dark);
+      display: grid;
+      place-items: center;
+    }
+    .lightbox__nav:hover { background: rgba(248, 250, 252, 0.25); }
+    .lightbox__nav svg { width: 20px; height: 20px; }
+    .lightbox__nav--prev { left: -3rem; }
+    .lightbox__nav--next { right: -3rem; }
+    @media (max-width: 720px) {
+      .lightbox__nav--prev { left: 0.25rem; }
+      .lightbox__nav--next { right: 0.25rem; }
+      .lightbox__close { top: 0.25rem; right: 0.25rem; }
+    }
+
+    /* ---------- A11y: reduced motion ---------- */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .reveal { opacity: 1; transform: translateY(0); }
+      .hero__scroll-arrow { animation: none; }
+      .btn--pulse::after { animation: none; }
+      .hero__bg { animation: none; }
+    }
+
+    @media print {
+      .top-bar, .site-header, .mobile-menu, .sticky-call, .back-to-top, .review-badge, .lightbox, .hero__scroll, iframe, .carousel__controls { display: none !important; }
+      body::before { display: none; }
+      body { background: white; color: black; }
+      section { padding-block: 1.5rem; break-inside: avoid; }
+    }
+
+    ::selection { background: var(--accent-soft); color: var(--ink-primary); }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Preskoči na vsebino</a>
+
+  <!-- TOP BAR -->
+  <div class="top-bar" role="region" aria-label="Status in dnevni napotek">
+    <div class="top-bar__inner">
+      <span class="top-bar__status" id="topbar-status" data-status="open">
+        <span class="top-bar__dot" aria-hidden="true"></span>
+        <span class="top-bar__status-label">Odprto</span>
+      </span>
+      <span class="top-bar__day-banner" id="day-banner">Predogled vaše spletne strani prejmete v 48 urah</span>
+      <a class="top-bar__phone" href="tel:+38631271317">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/>
+        </svg>
+        031 271 317
+      </a>
+    </div>
+  </div>
+
+  <!-- HEADER + NAV -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container">
+      <nav class="nav" aria-label="Glavna navigacija">
+        <a class="nav__brand" href="#hero" aria-label="Prego Systems — domov">
+          <span class="nav__brand-mark" aria-hidden="true">P</span>
+          <span>
+            <span class="nav__brand-text">Prego Systems</span>
+            <span class="nav__brand-sub">Sodobne spletne strani</span>
+          </span>
+        </a>
+
+        <ul class="nav__primary" role="list">
+          <li><a class="nav__link" href="#storitve" data-nav-link>Storitve</a></li>
+          <li><a class="nav__link" href="#postopek" data-nav-link>Postopek</a></li>
+          <li><a class="nav__link" href="#portfelj" data-nav-link>Portfelj</a></li>
+          <li><a class="nav__link" href="#mnenja" data-nav-link>Mnenja</a></li>
+          <li><a class="nav__link" href="#cenik" data-nav-link>Cenik</a></li>
+          <li><a class="nav__link" href="#kontakt" data-nav-link>Kontakt</a></li>
+        </ul>
+
+        <div class="nav__extras">
+          <a class="nav__phone" href="tel:+38631271317">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/>
+            </svg>
+            031 271 317
+          </a>
+          <a class="btn btn--primary" href="https://form.lime-booking.com/en/lime-demo-saloni/location" target="_blank" rel="noopener" data-cta="lime-booking" data-ripple>Rezerviraj termin</a>
+        </div>
+
+        <button class="nav__hamburger" id="hamburger" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Odpri meni">
+          <span class="hamburger-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-label="Mobilna navigacija">
+    <a class="mobile-menu__link" href="#storitve" data-mobile-link>Storitve</a>
+    <a class="mobile-menu__link" href="#postopek" data-mobile-link>Postopek</a>
+    <a class="mobile-menu__link" href="#portfelj" data-mobile-link>Portfelj</a>
+    <a class="mobile-menu__link" href="#mnenja" data-mobile-link>Mnenja</a>
+    <a class="mobile-menu__link" href="#cenik" data-mobile-link>Cenik</a>
+    <a class="mobile-menu__link" href="#kontakt" data-mobile-link>Kontakt</a>
+    <a class="btn btn--primary btn--block mobile-menu__cta" href="https://form.lime-booking.com/en/lime-demo-saloni/location" target="_blank" rel="noopener" data-cta="lime-booking" data-mobile-link data-ripple>Rezerviraj termin</a>
+    <div class="mobile-menu__contact">
+      <span>Pokličite nas:</span>
+      <a class="mobile-menu__phone" href="tel:+38631271317">031 271 317</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- HERO with animated gradient -->
+    <section class="hero" id="hero" aria-label="Pozdravna sekcija">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <span class="eyebrow hero__eyebrow">Prego Systems · Slovenija</span>
+        <h1 class="hero__title">Sodobna spletna stran <span class="hero__title-accent">v 48 urah.</span></h1>
+        <span class="hero__script">naročilo, predogled, premiera.</span>
+        <p class="hero__subhead">Profesionalna stran z vsebino in fotografijami za vaše podjetje. Predogled prejmete v dveh dneh — plačate šele, ko ste zadovoljni.</p>
+
+        <div class="hero__ctas">
+          <a class="btn btn--primary btn--lg btn--pulse" href="https://form.lime-booking.com/en/lime-demo-saloni/location" target="_blank" rel="noopener" data-cta="lime-booking" data-ripple>
+            Rezerviraj termin
+            <svg class="btn__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="3" y1="8" x2="13" y2="8"></line>
+              <polyline points="9 4 13 8 9 12"></polyline>
+            </svg>
+          </a>
+          <a class="btn btn--ghost-light btn--lg" href="#storitve" data-ripple>Poglejte ponudbo</a>
+        </div>
+
+        <div class="hero__stats" role="list">
+          <div role="listitem">
+            <p class="hero__stat-value" data-counter data-target="48">0</p>
+            <span class="hero__stat-label">Ur do predogleda</span>
+          </div>
+          <div role="listitem">
+            <p class="hero__stat-value" data-counter data-target="25" data-suffix="+">0</p>
+            <span class="hero__stat-label">Zaključenih projektov</span>
+          </div>
+          <div role="listitem">
+            <p class="hero__stat-value" data-counter data-target="100" data-suffix="%">0</p>
+            <span class="hero__stat-label">Domena na ime stranke</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#problem" id="hero-scroll" aria-label="Pomakni se navzdol">
+        <span>Več</span>
+        <svg class="hero__scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <polyline points="6 13 12 19 18 13"></polyline>
+        </svg>
+      </a>
+      <div class="wave-divider wave-divider--bottom" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C300,60 600,0 1200,30 L1200,60 L0,60 Z" fill="var(--bg-page)"/></svg></div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="problem" id="problem" aria-labelledby="problem-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <span class="eyebrow">Zakaj sploh</span>
+          <h2 id="problem-title">Zakaj potrebujete spletno stran</h2>
+          <p class="lead">Trije razlogi, zakaj se sodobna mala podjetja vsak teden odločijo za sodelovanje z nami.</p>
+        </header>
+
+        <div class="problem__grid">
+          <article class="problem-card reveal" data-stagger="1">
+            <span class="problem-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/>
+                <line x1="16" y1="16" x2="21" y2="21"/>
+              </svg>
+            </span>
+            <h3>Nevidni na spletu</h3>
+            <p>83% strank najprej poišče podjetje na Googlu. Brez spletne strani vas ne najdejo, tudi če ste najboljši v svoji panogi.</p>
+          </article>
+
+          <article class="problem-card reveal" data-stagger="2">
+            <span class="problem-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                <path d="M3 9h18"/>
+                <line x1="9" y1="13" x2="15" y2="13"/>
+              </svg>
+            </span>
+            <h3>Družbena omrežja niso dovolj</h3>
+            <p>Facebook in Instagram sta posojeni hiši. Pravila se spreminjajo, doseg pada, vaše stranke pa težko najdejo osnovne informacije o vaši ponudbi.</p>
+          </article>
+
+          <article class="problem-card reveal" data-stagger="3">
+            <span class="problem-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 1v22"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </span>
+            <h3>Agencije so predrage</h3>
+            <p>Klasične agencije zaračunajo več tisoč evrov za izdelavo in mesečno vzdrževanje. Pri nas plačate pošteno mesečno naročnino — brez skritih stroškov.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__grid">
+          <figure class="about__media reveal">
+            <img src="images/about.webp" alt="Žan Pregelj, ustanovitelj podjetja Prego Systems, v studiu v Kamniku." width="900" height="1200" loading="lazy" decoding="async" />
+          </figure>
+
+          <div class="about__copy reveal" data-stagger="1">
+            <span class="eyebrow">Kdo smo</span>
+            <h2 id="about-title">Manjša ekipa, večja pozornost</h2>
+            <p>Prego Systems je slovensko podjetje za izdelavo spletnih strani. Vodi ga Žan Pregelj. Vsako stran zgradimo ročno, brez predlog in podizvajalcev. To pomeni, da z vami govori isti človek od začetnega klica do objave.</p>
+            <p>Specializirani smo za sodobne enostranske strani za obrtnike, salone in manjša podjetja po Sloveniji. Brez tujih klicnih centrov, brez vmesnih prodajalcev.</p>
+
+            <div class="about__stats">
+              <div>
+                <p class="about__stat-value" data-counter data-target="48">0</p>
+                <span class="about__stat-label">Ur do predogleda</span>
+              </div>
+              <div>
+                <p class="about__stat-value" data-counter data-target="25" data-suffix="+">0</p>
+                <span class="about__stat-label">Zaključenih projektov</span>
+              </div>
+              <div>
+                <p class="about__stat-value" data-counter data-target="100" data-suffix="%">0</p>
+                <span class="about__stat-label">Domena na ime stranke</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="storitve" aria-labelledby="services-title">
+      <div class="wave-divider wave-divider--top" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C300,60 600,0 1200,30 L1200,60 L0,60 Z" fill="var(--bg-page)"/></svg></div>
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <span class="eyebrow">Ponudba</span>
+          <h2 id="services-title">Kaj za vas naredimo</h2>
+          <p class="lead">Vse, kar potrebujete za delujočo spletno prisotnost, na enem mestu — z mesečno naročnino brez skritih stroškov.</p>
+        </header>
+
+        <div class="services__grid">
+          <article class="service-card reveal" data-stagger="1">
+            <div class="service-card__media">
+              <img src="images/service-01.webp" alt="Sodobna spletna stran prikazana na prenosniku." width="1000" height="1000" loading="lazy" decoding="async" />
+              <span class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="14" rx="2"/>
+                  <line x1="3" y1="18" x2="21" y2="18"/>
+                  <line x1="9" y1="22" x2="15" y2="22"/>
+                </svg>
+              </span>
+            </div>
+            <div class="service-card__body">
+              <span class="service-card__num">01 STORITEV</span>
+              <h3>Enostranska spletna stran</h3>
+              <p>Sodobna, hitra in mobilno prijazna stran z vsemi ključnimi informacijami. Pregledna struktura, ki obiskovalca pripelje do klica ali povpraševanja.</p>
+              <a class="service-card__cta" href="#kontakt">
+                Povprašaj o tej storitvi
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 4 10 8 6 12"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-stagger="2">
+            <div class="service-card__media">
+              <img src="images/service-02.webp" alt="Priprava vsebine in fotografij za spletno stran." width="1000" height="1000" loading="lazy" decoding="async" />
+              <span class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2"/>
+                  <circle cx="12" cy="12" r="3.5"/>
+                  <circle cx="17" cy="9" r="0.7" fill="currentColor"/>
+                </svg>
+              </span>
+            </div>
+            <div class="service-card__body">
+              <span class="service-card__num">02 STORITEV</span>
+              <h3>Vsebina in fotografije</h3>
+              <p>Pripravimo besedila v slovenščini in poskrbimo za kakovostne fotografije vašega prostora ali storitev. Vsebina, ki vzbudi zaupanje.</p>
+              <a class="service-card__cta" href="#kontakt">
+                Povprašaj o tej storitvi
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 4 10 8 6 12"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-stagger="3">
+            <div class="service-card__media">
+              <img src="images/service-03.webp" alt="Posodobitve vsebine in cenika." width="1000" height="1000" loading="lazy" decoding="async" />
+              <span class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12a9 9 0 1 1-3-6.7"/>
+                  <polyline points="21 4 21 9 16 9"/>
+                </svg>
+              </span>
+            </div>
+            <div class="service-card__body">
+              <span class="service-card__num">03 STORITEV</span>
+              <h3>Mesečne posodobitve</h3>
+              <p>Spreminjate cenik, urnik ali ponudbo? Posodobitve za vas opravimo v dogovorjenem roku. Vse vključeno v mesečno naročnino.</p>
+              <a class="service-card__cta" href="#kontakt">
+                Povprašaj o tej storitvi
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 4 10 8 6 12"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-stagger="4">
+            <div class="service-card__media">
+              <img src="images/service-04.webp" alt="Gostovanje in domena." width="1000" height="1000" loading="lazy" decoding="async" />
+              <span class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M3 12h18"/>
+                  <path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/>
+                </svg>
+              </span>
+            </div>
+            <div class="service-card__body">
+              <span class="service-card__num">04 STORITEV</span>
+              <h3>Gostovanje in domena</h3>
+              <p>Poskrbimo za registracijo domene, gostovanje in SSL certifikat. Domena je registrirana na vaše ime in ostane vaša last.</p>
+              <a class="service-card__cta" href="#kontakt">
+                Povprašaj o tej storitvi
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 4 10 8 6 12"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="postopek" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <span class="eyebrow">Postopek</span>
+          <h2 id="process-title">Kako poteka delo</h2>
+          <p class="lead">Štirje jasni koraki od prvega pogovora do objavljene strani.</p>
+        </header>
+
+        <ol class="process__list" role="list">
+          <li class="process-step reveal" data-stagger="1">
+            <span class="process-step__num" aria-hidden="true"></span>
+            <h3>Pogovor po telefonu</h3>
+            <p>Pokličete nas in v desetih minutah razjasnimo, kaj potrebujete in kako vam lahko pomagamo.</p>
+          </li>
+          <li class="process-step reveal" data-stagger="2">
+            <span class="process-step__num" aria-hidden="true"></span>
+            <h3>Predogled v 48 urah</h3>
+            <p>V dveh dneh pripravimo prvi predogled vaše spletne strani, da vidite konkreten rezultat.</p>
+          </li>
+          <li class="process-step reveal" data-stagger="3">
+            <span class="process-step__num" aria-hidden="true"></span>
+            <h3>Popravki in potrditev</h3>
+            <p>Skupaj pregledamo predogled, uskladimo besedila in barve ter stran prilagodimo vašim željam.</p>
+          </li>
+          <li class="process-step reveal" data-stagger="4">
+            <span class="process-step__num" aria-hidden="true"></span>
+            <h3>Objava in podpora</h3>
+            <p>Stran objavimo na vaši domeni in jo vzdržujemo v okviru mesečne naročnine.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- GALLERY (masonry) -->
+    <section class="gallery" id="portfelj" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <span class="eyebrow">Naše delo</span>
+          <h2 id="gallery-title">Spletne strani, ki smo jih zgradili</h2>
+          <p class="lead">Izbor strani za slovenske obrtnike, salone in manjša podjetja.</p>
+        </header>
+
+        <div class="gallery__grid" id="gallery">
+          <button class="gallery-item reveal" data-stagger="1" type="button" data-lb-src="images/gallery-elju.webp" data-lb-caption="ELJU · Elektroinštalacije">
+            <span class="gallery-item__media"><img src="images/gallery-elju.webp" alt="Posnetek spletne strani ELJU Elektroinštalacije." loading="lazy" decoding="async" /></span>
+            <span class="gallery-item__caption"><span>ELJU · Elektroinštalacije</span><span class="gallery-item__zoom" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="7" cy="7" r="5"/><line x1="11" y1="11" x2="14" y2="14"/><line x1="5" y1="7" x2="9" y2="7"/><line x1="7" y1="5" x2="7" y2="9"/></svg></span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-stagger="2" type="button" data-lb-src="images/gallery-salon-sara.webp" data-lb-caption="Salon SARA · Kozmetika">
+            <span class="gallery-item__media"><img src="images/gallery-salon-sara.webp" alt="Posnetek spletne strani Salon SARA." loading="lazy" decoding="async" /></span>
+            <span class="gallery-item__caption"><span>Salon SARA · Kozmetika</span><span class="gallery-item__zoom" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="7" cy="7" r="5"/><line x1="11" y1="11" x2="14" y2="14"/><line x1="5" y1="7" x2="9" y2="7"/><line x1="7" y1="5" x2="7" y2="9"/></svg></span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-stagger="3" type="button" data-lb-src="images/gallery-salon-umetnosti.webp" data-lb-caption="Salon Uporabnih Umetnosti">
+            <span class="gallery-item__media"><img src="images/gallery-salon-umetnosti.webp" alt="Posnetek spletne strani Salon Uporabnih Umetnosti." loading="lazy" decoding="async" /></span>
+            <span class="gallery-item__caption"><span>Salon Uporabnih Umetnosti</span><span class="gallery-item__zoom" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="7" cy="7" r="5"/><line x1="11" y1="11" x2="14" y2="14"/><line x1="5" y1="7" x2="9" y2="7"/><line x1="7" y1="5" x2="7" y2="9"/></svg></span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-stagger="4" type="button" data-lb-src="images/gallery-stara-pekarna.webp" data-lb-caption="Stara Pekarna · Pekarna">
+            <span class="gallery-item__media"><img src="images/gallery-stara-pekarna.webp" alt="Posnetek spletne strani Stara Pekarna." loading="lazy" decoding="async" /></span>
+            <span class="gallery-item__caption"><span>Stara Pekarna · Pekarna</span><span class="gallery-item__zoom" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="7" cy="7" r="5"/><line x1="11" y1="11" x2="14" y2="14"/><line x1="5" y1="7" x2="9" y2="7"/><line x1="7" y1="5" x2="7" y2="9"/></svg></span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-stagger="5" type="button" data-lb-src="images/gallery-studio-isabel.webp" data-lb-caption="Studio Lepote Isabel · Masaže">
+            <span class="gallery-item__media"><img src="images/gallery-studio-isabel.webp" alt="Posnetek spletne strani Studio Lepote Isabel." loading="lazy" decoding="async" /></span>
+            <span class="gallery-item__caption"><span>Studio Lepote Isabel · Masaže</span><span class="gallery-item__zoom" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="7" cy="7" r="5"/><line x1="11" y1="11" x2="14" y2="14"/><line x1="5" y1="7" x2="9" y2="7"/><line x1="7" y1="5" x2="7" y2="9"/></svg></span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-stagger="6" type="button" data-lb-src="images/gallery-double-b-gym.webp" data-lb-caption="Double B GYM · Fitnes">
+            <span class="gallery-item__media"><img src="images/gallery-double-b-gym.webp" alt="Posnetek spletne strani Double B GYM." loading="lazy" decoding="async" /></span>
+            <span class="gallery-item__caption"><span>Double B GYM · Fitnes</span><span class="gallery-item__zoom" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="7" cy="7" r="5"/><line x1="11" y1="11" x2="14" y2="14"/><line x1="5" y1="7" x2="9" y2="7"/><line x1="7" y1="5" x2="7" y2="9"/></svg></span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS CAROUSEL -->
+    <section class="testimonials" id="mnenja" aria-labelledby="testimonials-title">
+      <div class="wave-divider wave-divider--top" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C300,60 600,0 1200,30 L1200,60 L0,60 Z" fill="var(--bg-page)"/></svg></div>
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <span class="eyebrow">Mnenja strank</span>
+          <h2 id="testimonials-title">Kaj pravijo naše stranke</h2>
+          <p class="lead">Izsek mnenj slovenskih obrtnikov in lastnikov salonov, ki so se odločili za sodelovanje z nami.</p>
+        </header>
+
+        <div class="carousel reveal" id="carousel">
+          <div class="carousel__viewport">
+            <div class="carousel__track" id="carousel-track">
+              <article class="carousel__slide">
+                <div class="carousel__rating" aria-label="Ocena: 5 zvezdic">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                </div>
+                <p class="carousel__quote">Stran je bila pripravljena v 48 urah, kot obljubljeno. Žan vse uredi, jaz pa lahko delam svoj posel.</p>
+                <p class="carousel__author">Marko Novak<span class="carousel__author-business">Elektroinštalacije Novak · Maribor</span></p>
+              </article>
+
+              <article class="carousel__slide">
+                <div class="carousel__rating" aria-label="Ocena: 5 zvezdic">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                </div>
+                <p class="carousel__quote">Lepa, hitra in pregledna stran. Kupcev je bistveno več, odkar nas najdejo na Googlu. Mesečna naročnina je smiselna.</p>
+                <p class="carousel__author">Ana Horvat<span class="carousel__author-business">Salon Lepote Ana · Ljubljana</span></p>
+              </article>
+
+              <article class="carousel__slide">
+                <div class="carousel__rating" aria-label="Ocena: 5 zvezdic">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                </div>
+                <p class="carousel__quote">Cenovno najbolj poštena ponudba, ki sem jo dobil. Predogled v dveh dneh, brez pritiska. Priporočam vsakemu samostojnemu podjetniku.</p>
+                <p class="carousel__author">Tomaž Kovač<span class="carousel__author-business">Mizarstvo Kovač s.p. · Kranj</span></p>
+              </article>
+
+              <article class="carousel__slide">
+                <div class="carousel__rating" aria-label="Ocena: 5 zvezdic">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                </div>
+                <p class="carousel__quote">Pohvalim odzivnost. Pišem na telefon ali e-pošto, popravki so urejeni v par urah. Brez stresa.</p>
+                <p class="carousel__author">Maja Petek<span class="carousel__author-business">Cvetličarna Petek · Celje</span></p>
+              </article>
+
+              <article class="carousel__slide">
+                <div class="carousel__rating" aria-label="Ocena: 5 zvezdic">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+                </div>
+                <p class="carousel__quote">Imel sem nizka pričakovanja po slabih izkušnjah z agencijami. Tu so me prijetno presenetili — strokovno, hitro in pošteno.</p>
+                <p class="carousel__author">Peter Zupan<span class="carousel__author-business">Avtoservis Zupan · Domžale</span></p>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel__controls">
+            <button class="carousel__btn" type="button" id="carousel-prev" aria-label="Prejšnje mnenje">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 6 9 12 15 18"/></svg>
+            </button>
+            <div class="carousel__dots" id="carousel-dots" role="tablist" aria-label="Navigacija mnenj"></div>
+            <button class="carousel__btn" type="button" id="carousel-next" aria-label="Naslednje mnenje">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM / SOCIAL FEED (H) -->
+    <section class="social" id="instagram" aria-labelledby="social-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <span class="eyebrow">Sledite nam</span>
+          <h2 id="social-title">Najnovejše s Instagrama</h2>
+          <p class="lead">Vsak teden delimo nove projekte, zaodrske utrinke in nasvete za vašo spletno prisotnost.</p>
+          <a class="social__handle" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Profil na Instagramu @pregosystems">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="3"/><circle cx="8" cy="8" r="2.5"/><circle cx="11.7" cy="4.3" r="0.5" fill="currentColor"/></svg>
+            @pregosystems
+          </a>
+        </header>
+
+        <div class="social__grid">
+          <a class="social-tile reveal" data-stagger="1" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Objava na Instagramu: ELJU Elektroinštalacije">
+            <img src="images/gallery-elju.webp" alt="Objava na Instagramu — spletna stran ELJU Elektroinštalacije." loading="lazy" decoding="async" />
+            <span class="social-tile__overlay" aria-hidden="true">
+              <span class="social-tile__stat"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14s-5-3.2-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.8-5 7-5 7z"/></svg>248</span>
+              <span class="social-tile__stat"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M14 8a5.5 5.5 0 0 1-7.7 5L3 14l1-3.2A5.5 5.5 0 1 1 14 8z"/></svg>17</span>
+            </span>
+          </a>
+          <a class="social-tile reveal" data-stagger="2" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Objava na Instagramu: Salon SARA">
+            <img src="images/gallery-salon-sara.webp" alt="Objava na Instagramu — spletna stran Salon SARA." loading="lazy" decoding="async" />
+            <span class="social-tile__overlay" aria-hidden="true">
+              <span class="social-tile__stat"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14s-5-3.2-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.8-5 7-5 7z"/></svg>312</span>
+              <span class="social-tile__stat"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M14 8a5.5 5.5 0 0 1-7.7 5L3 14l1-3.2A5.5 5.5 0 1 1 14 8z"/></svg>24</span>
+            </span>
+          </a>
+          <a class="social-tile reveal" data-stagger="3" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Objava na Instagramu: Salon Uporabnih Umetnosti">
+            <img src="images/gallery-salon-umetnosti.webp" alt="Objava na Instagramu — spletna stran Salon Uporabnih Umetnosti." loading="lazy" decoding="async" />
+            <span class="social-tile__overlay" aria-hidden="true">
+              <span class="social-tile__stat"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14s-5-3.2-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.8-5 7-5 7z"/></svg>196</span>
+              <span class="social-tile__stat"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M14 8a5.5 5.5 0 0 1-7.7 5L3 14l1-3.2A5.5 5.5 0 1 1 14 8z"/></svg>9</span>
+            </span>
+          </a>
+          <a class="social-tile reveal" data-stagger="4" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Objava na Instagramu: Stara Pekarna">
+            <img src="images/gallery-stara-pekarna.webp" alt="Objava na Instagramu — spletna stran Stara Pekarna." loading="lazy" decoding="async" />
+            <span class="social-tile__overlay" aria-hidden="true">
+              <span class="social-tile__stat"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14s-5-3.2-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.8-5 7-5 7z"/></svg>421</span>
+              <span class="social-tile__stat"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M14 8a5.5 5.5 0 0 1-7.7 5L3 14l1-3.2A5.5 5.5 0 1 1 14 8z"/></svg>38</span>
+            </span>
+          </a>
+          <a class="social-tile reveal" data-stagger="5" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Objava na Instagramu: Studio Lepote Isabel">
+            <img src="images/gallery-studio-isabel.webp" alt="Objava na Instagramu — spletna stran Studio Lepote Isabel." loading="lazy" decoding="async" />
+            <span class="social-tile__overlay" aria-hidden="true">
+              <span class="social-tile__stat"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14s-5-3.2-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.8-5 7-5 7z"/></svg>277</span>
+              <span class="social-tile__stat"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M14 8a5.5 5.5 0 0 1-7.7 5L3 14l1-3.2A5.5 5.5 0 1 1 14 8z"/></svg>21</span>
+            </span>
+          </a>
+          <a class="social-tile reveal" data-stagger="6" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Objava na Instagramu: Double B GYM">
+            <img src="images/gallery-double-b-gym.webp" alt="Objava na Instagramu — spletna stran Double B GYM." loading="lazy" decoding="async" />
+            <span class="social-tile__overlay" aria-hidden="true">
+              <span class="social-tile__stat"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14s-5-3.2-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.8-5 7-5 7z"/></svg>389</span>
+              <span class="social-tile__stat"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M14 8a5.5 5.5 0 0 1-7.7 5L3 14l1-3.2A5.5 5.5 0 1 1 14 8z"/></svg>33</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="social__cta reveal">
+          <a class="btn btn--ghost" href="https://www.instagram.com/" target="_blank" rel="noopener" data-ripple>
+            Sledite na Instagramu
+            <svg class="btn__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="cenik" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <span class="eyebrow">Cenik</span>
+          <h2 id="pricing-title">Jasne cene, brez vezave</h2>
+          <p class="lead">Izberite paket, ki ustreza vašemu obsegu. Prehod med paketi je možen kadarkoli.</p>
+          <div class="pricing__toggle" role="tablist" aria-label="Vrsta naročnine">
+            <button type="button" id="pricing-toggle-monthly" class="is-active" aria-pressed="true">Mesečno</button>
+            <button type="button" id="pricing-toggle-yearly" aria-pressed="false">Letno · –10 %</button>
+          </div>
+        </header>
+
+        <div class="pricing__grid">
+          <article class="pricing-card reveal" data-stagger="1">
+            <h3 class="pricing-card__name">Osnovni</h3>
+            <p class="pricing-card__from">Že od</p>
+            <p class="pricing-card__price" data-price data-monthly="10 €" data-yearly="9 €"><span class="pricing-card__price-num">10 €</span><span class="pricing-card__price-sub">/mesec</span></p>
+            <ul class="pricing-card__list" role="list">
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Domena .si</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Gostovanje in SSL</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Mobilna različica</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Mesečne posodobitve</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Osnovni SEO</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Slovenska podpora</li>
+            </ul>
+            <a class="btn btn--ghost" href="https://form.lime-booking.com/en/lime-demo-saloni/location" target="_blank" rel="noopener" data-cta="lime-booking" data-ripple>Rezerviraj termin</a>
+          </article>
+
+          <article class="pricing-card is-featured reveal" data-stagger="2">
+            <h3 class="pricing-card__name">Razširjeni</h3>
+            <p class="pricing-card__from">Že od</p>
+            <p class="pricing-card__price" data-price data-monthly="18 €" data-yearly="16 €"><span class="pricing-card__price-num">18 €</span><span class="pricing-card__price-sub">/mesec</span></p>
+            <ul class="pricing-card__list" role="list">
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Vse iz Osnovnega</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Google Zemljevidi</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Kontaktni obrazec</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Foto galerija</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Prednostne posodobitve</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Razširjeni SEO</li>
+            </ul>
+            <a class="btn btn--primary" href="https://form.lime-booking.com/en/lime-demo-saloni/location" target="_blank" rel="noopener" data-cta="lime-booking" data-ripple>Rezerviraj termin</a>
+          </article>
+
+          <article class="pricing-card reveal" data-stagger="3">
+            <h3 class="pricing-card__name">S fotografijami</h3>
+            <p class="pricing-card__from">Že od</p>
+            <p class="pricing-card__price" data-price data-monthly="25 €" data-yearly="22 €"><span class="pricing-card__price-num">25 €</span><span class="pricing-card__price-sub">/mesec</span></p>
+            <ul class="pricing-card__list" role="list">
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Vse iz Razširjenega</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Profesionalno fotografiranje</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Obdelava fotografij</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Predstavitev ekipe</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Letna osvežitev vsebine</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>Prednostna podpora</li>
+            </ul>
+            <a class="btn btn--ghost" href="https://form.lime-booking.com/en/lime-demo-saloni/location" target="_blank" rel="noopener" data-cta="lime-booking" data-ripple>Rezerviraj termin</a>
+          </article>
+        </div>
+
+        <p class="pricing__footnote">Cene ne vključujejo DDV. Brez stroška priprave, brez vezave. Letno plačilo ponuja 10 % popusta.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wave-divider wave-divider--top" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C300,60 600,0 1200,30 L1200,60 L0,60 Z" fill="var(--bg-page)"/></svg></div>
+      <div class="container container--narrow">
+        <header class="section-head section-head--center reveal">
+          <span class="eyebrow">Pogosta vprašanja</span>
+          <h2 id="faq-title">Najpogostejša vprašanja</h2>
+        </header>
+
+        <div class="faq__list">
+          <details class="faq-item reveal" data-stagger="1">
+            <summary>
+              Ali moram plačati vnaprej?
+              <span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </summary>
+            <div class="faq-item__body"><p>Ne. Najprej pripravimo predogled vaše spletne strani, ki si ga lahko brezplačno ogledate. Plačate šele, ko ste z rezultatom zadovoljni in stran objavimo.</p></div>
+          </details>
+
+          <details class="faq-item reveal" data-stagger="1">
+            <summary>
+              Koliko časa traja izdelava?
+              <span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </summary>
+            <div class="faq-item__body"><p>Prvi predogled prejmete v 48 urah po naročilu. Po vaših popravkih in potrditvi je stran običajno objavljena v enem tednu.</p></div>
+          </details>
+
+          <details class="faq-item reveal" data-stagger="1">
+            <summary>
+              Ali nudite tudi SEO optimizacijo?
+              <span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </summary>
+            <div class="faq-item__body"><p>Vsaka stran ima osnovno SEO nastavitev (meta podatki, OG, schema.org, hitrost). Razširjeni paket vključuje tudi optimizacijo besedil in Google Business Profile.</p></div>
+          </details>
+
+          <details class="faq-item reveal" data-stagger="1">
+            <summary>
+              Ali lahko spremenim vsebino?
+              <span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </summary>
+            <div class="faq-item__body"><p>Da. Spremembe besedil, cen, urnikov ali fotografij so vključene v mesečno naročnino. Pošljite nam zahtevo po e-pošti ali telefonu.</p></div>
+          </details>
+
+          <details class="faq-item reveal" data-stagger="1">
+            <summary>
+              Kdo je lastnik domene?
+              <span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </summary>
+            <div class="faq-item__body"><p>Domena je registrirana na vaše ime in ostane v vaši lasti. Tudi če sodelovanje prekinemo, domena ostane vaša.</p></div>
+          </details>
+
+          <details class="faq-item reveal" data-stagger="1">
+            <summary>
+              Kaj če nisem zadovoljen?
+              <span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </summary>
+            <div class="faq-item__body"><p>Predogled je brezplačen — če ne ustreza, nimate stroška. Po objavi je naročnina mesečna, brez vezave. Odpoved poteka po dogovoru.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="kontakt" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Kontakt</span>
+          <h2 id="contact-title">Pišite ali pokličite nas</h2>
+          <p class="lead">Odgovorimo v istem ali naslednjem delovnem dnevu. Po pogovoru lahko rezervirate termin za podrobno predstavitev.</p>
+        </header>
+
+        <div class="contact__grid">
+
+          <div class="contact__details reveal">
+            <h3>Stik z nami</h3>
+            <ul class="contact__list" role="list">
+              <li>
+                <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/></svg></span>
+                <div><dt>Telefon</dt><dd><a href="tel:+38631271317">031 271 317</a></dd></div>
+              </li>
+              <li>
+                <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3" width="13" height="10" rx="1"/><polyline points="2 4 8 9 14 4"/></svg></span>
+                <div><dt>E-pošta</dt><dd><a href="mailto:info&#64;pregosystems.com">info<!---->&#64;<!---->pregosystems.com</a></dd></div>
+              </li>
+              <li>
+                <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1c2.8 0 5 2.2 5 5c0 3.5-5 9-5 9s-5-5.5-5-9c0-2.8 2.2-5 5-5z"/><circle cx="8" cy="6" r="2"/></svg></span>
+                <div><dt>Sedež</dt><dd>Jakopičeva ulica 20, 1241 Kamnik<br /><a href="https://www.google.com/maps/dir/?api=1&destination=Jakopi%C4%8Deva+ulica+20%2C+Kamnik%2C+Slovenia" target="_blank" rel="noopener">Pridobi navodila za pot →</a></dd></div>
+              </li>
+              <li>
+                <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><polyline points="8 4 8 8 11 9.5"/></svg></span>
+                <div><dt>Delovni čas</dt><dd>Pon–Pet 9:00–17:00</dd></div>
+              </li>
+            </ul>
+
+            <div class="contact__map">
+              <iframe
+                src="https://www.google.com/maps?q=Jakopi%C4%8Deva+ulica+20,+Kamnik,+Slovenija&output=embed"
+                title="Lokacija Prego Systems — Jakopičeva ulica 20, Kamnik"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contact-form" novalidate>
+            <h3>Pošljite povpraševanje</h3>
+
+            <div class="field">
+              <label for="cf-name">Ime in priimek</label>
+              <input type="text" id="cf-name" name="name" required autocomplete="name" />
+            </div>
+
+            <div class="field">
+              <label for="cf-email">E-naslov</label>
+              <input type="email" id="cf-email" name="email" required autocomplete="email" />
+            </div>
+
+            <div class="field">
+              <label for="cf-phone">Telefon (opcijsko)</label>
+              <input type="tel" id="cf-phone" name="phone" autocomplete="tel" />
+            </div>
+
+            <div class="field">
+              <label for="cf-business">Vaše podjetje (opcijsko)</label>
+              <input type="text" id="cf-business" name="business" autocomplete="organization" />
+            </div>
+
+            <div class="field">
+              <label for="cf-message">Vaše sporočilo</label>
+              <textarea id="cf-message" name="message" required></textarea>
+            </div>
+
+            <p class="form__consent">S pošiljanjem obrazca soglašate, da vaše podatke uporabimo izključno za odgovor na povpraševanje, v skladu s <a href="https://pregosystems.com/zasebnost" target="_blank" rel="noopener">politiko zasebnosti</a>.</p>
+
+            <button class="btn btn--primary btn--lg form__submit" type="submit" data-ripple>
+              Pošlji povpraševanje
+              <svg class="btn__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
+            </button>
+
+            <div class="form__success" id="form-success" aria-live="polite">
+              <span class="form__success-check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <h4>Hvala za povpraševanje</h4>
+              <p>Odgovorili vam bomo v 1 delovnem dnevu. Če je nujno, nas pokličite na 031 271 317.</p>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__top">
+
+        <div class="footer__col">
+          <a class="footer__brand" href="#hero">
+            <span class="footer__brand-mark" aria-hidden="true">P</span>
+            <span class="footer__brand-text">Prego Systems</span>
+          </a>
+          <p class="footer__about">Sodobne spletne strani za slovenske obrtnike, salone in manjša podjetja. Brez predlog, brez podizvajalcev — z mesečno naročnino.</p>
+          <a class="btn btn--on-dark" href="https://form.lime-booking.com/en/lime-demo-saloni/location" target="_blank" rel="noopener" data-cta="lime-booking" data-ripple>Rezerviraj termin</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Razdelki</h4>
+          <ul class="footer__list" role="list">
+            <li><a href="#storitve">Storitve</a></li>
+            <li><a href="#postopek">Postopek</a></li>
+            <li><a href="#portfelj">Portfelj</a></li>
+            <li><a href="#mnenja">Mnenja</a></li>
+            <li><a href="#cenik">Cenik</a></li>
+            <li><a href="#faq">Vprašanja</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <dl class="footer__contact">
+            <dt>Telefon</dt>
+            <dd><a href="tel:+38631271317">031 271 317</a></dd>
+            <dt>E-pošta</dt>
+            <dd><a href="mailto:info&#64;pregosystems.com">info<!---->&#64;<!---->pregosystems.com</a></dd>
+            <dt>Sedež</dt>
+            <dd>Jakopičeva ulica 20<br />1241 Kamnik, Slovenija</dd>
+            <dt>Delovni čas</dt>
+            <dd>Pon–Pet 9:00–17:00</dd>
+          </dl>
+        </div>
+
+        <div class="footer__col newsletter">
+          <h4>Bodite obveščeni</h4>
+          <p>Občasno pošljemo nasvete za sodobno spletno prisotnost. Brez spama.</p>
+          <form class="newsletter__form" id="newsletter-form">
+            <input type="email" name="email" placeholder="vaš e-naslov" aria-label="E-naslov" required />
+            <button class="btn btn--primary btn--sm" type="submit" data-ripple>Prijavi se</button>
+            <p class="newsletter__consent">S prijavo soglašate s prejemanjem občasnih sporočil.</p>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Prego Systems · Žan Pregelj s.p. · Slovenija</span>
+        <ul class="footer__legal" role="list">
+          <li><a href="https://pregosystems.com/zasebnost" target="_blank" rel="noopener">Politika zasebnosti</a></li>
+          <li><a href="https://pregosystems.com/pogoji" target="_blank" rel="noopener">Pogoji uporabe</a></li>
+          <li><a href="https://pregosystems.com/piskotki" target="_blank" rel="noopener">Piškotki</a></li>
+        </ul>
+        <ul class="footer__social" role="list" aria-label="Družbena omrežja">
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M9.5 16V8.5h2.5l.5-3h-3V3.5c0-.8.4-1.5 1.5-1.5h1.5V0h-2.5c-2 0-3.5 1.5-3.5 3.5v2H4v3h2.5V16h3z"/></svg></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="3"/><circle cx="8" cy="8" r="2.5"/><circle cx="11.7" cy="4.3" r="0.5" fill="currentColor"/></svg></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING -->
+  <a class="sticky-call" id="sticky-call" href="tel:+38631271317" aria-label="Pokliči 031 271 317">
+    <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/></svg>
+    Pokliči zdaj
+  </a>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Pomakni se na vrh strani">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="6 11 12 5 18 11"/></svg>
+  </button>
+
+  <a class="review-badge" id="review-badge" href="#mnenja" aria-label="Naša mnenja, ocena 5 zvezdic">
+    <span class="review-badge__g" aria-hidden="true">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#4285F4" d="M21.6 12.2c0-.7-.1-1.3-.2-1.9H12v3.7h5.4c-.2 1.2-.9 2.3-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3z"/>
+        <path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 .9-3.4.9-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6C4.7 19.6 8.1 22 12 22z"/>
+        <path fill="#FBBC05" d="M6.4 13.8c-.2-.6-.3-1.2-.3-1.8s.1-1.2.3-1.8V7.6H3.1A10 10 0 0 0 2 12c0 1.6.4 3.1 1.1 4.4l3.3-2.6z"/>
+        <path fill="#EA4335" d="M12 6.6c1.5 0 2.8.5 3.8 1.5l2.8-2.8C16.9 3.7 14.7 2.8 12 2.8 8.1 2.8 4.7 5.2 3.1 8.6l3.3 2.6c.8-2.3 3-4.6 5.6-4.6z"/>
+      </svg>
+    </span>
+    <span class="review-badge__main">
+      <span class="review-badge__stars" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 10l-5.7 4.7L18 22l-6-3.5L6 22l1.7-7.3L2 10l7.4-1.1z"/></svg>
+      </span>
+      <span class="review-badge__rating">5,0 · Google</span>
+      <span class="review-badge__rating-label">25+ ocen</span>
+    </span>
+  </a>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Predogled slike" aria-hidden="true">
+    <div class="lightbox__inner">
+      <button class="lightbox__close" type="button" id="lightbox-close" aria-label="Zapri predogled">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" id="lightbox-prev" aria-label="Prejšnja slika">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 6 9 12 15 18"/></svg>
+      </button>
+      <button class="lightbox__nav lightbox__nav--next" type="button" id="lightbox-next" aria-label="Naslednja slika">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+      </button>
+      <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script>
+    /* PREGO SYSTEMS · MODERN · script.js */
+    (function () {
+      'use strict';
+
+      const $  = (sel, root = document) => root.querySelector(sel);
+      const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+      /* Mobile menu */
+      const hamburger  = $('#hamburger');
+      const mobileMenu = $('#mobile-menu');
+      function setMenu(open) {
+        if (!hamburger || !mobileMenu) return;
+        hamburger.setAttribute('aria-expanded', String(open));
+        hamburger.setAttribute('aria-label', open ? 'Zapri meni' : 'Odpri meni');
+        mobileMenu.classList.toggle('is-open', open);
+        document.body.classList.toggle('is-locked', open);
+      }
+      if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', () => {
+          const open = mobileMenu.classList.contains('is-open');
+          setMenu(!open);
+        });
+        $$('[data-mobile-link]', mobileMenu).forEach(a => a.addEventListener('click', () => setMenu(false)));
+        const mql = window.matchMedia('(min-width: 961px)');
+        const onChange = (e) => { if (e.matches) setMenu(false); };
+        if (mql.addEventListener) mql.addEventListener('change', onChange);
+        else mql.addListener(onChange);
+      }
+
+      /* Header elevation on scroll */
+      const header = $('#site-header');
+      const heroScroll = $('#hero-scroll');
+      const stickyCall = $('#sticky-call');
+      const backToTop  = $('#back-to-top');
+      const reviewBadge = $('#review-badge');
+      const hero = $('#hero');
+
+      function onScroll() {
+        const y = window.scrollY;
+        if (header) header.classList.toggle('is-elevated', y > 16);
+        if (heroScroll) heroScroll.classList.toggle('is-hidden', y > 100);
+        const heroBottom = hero ? hero.getBoundingClientRect().bottom + window.scrollY : 600;
+        if (stickyCall) stickyCall.classList.toggle('is-visible', y > Math.max(120, heroBottom - 200));
+        if (backToTop)  backToTop.classList.toggle('is-visible',  y > 800);
+        if (reviewBadge) reviewBadge.classList.toggle('is-visible', y > Math.max(400, heroBottom - 100));
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      if (backToTop) backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+      /* Open/closed status + day banner */
+      const BUSINESS_HOURS = { 0: null, 1: [9, 17], 2: [9, 17], 3: [9, 17], 4: [9, 17], 5: [9, 17], 6: null };
+      const DAY_BANNERS = {
+        1: "Začnimo teden — predogled vaše strani v 48 urah",
+        2: "Torek je idealen za nove projekte — pokličite nas",
+        3: "Sredina tedna, polna pozornost vašemu povpraševanju",
+        4: "Še 48 ur do vašega prvega predogleda",
+        5: "Petkovo povpraševanje, ponedeljek na spletu"
+      };
+      const dayName = ['nedelja','ponedeljek','torek','sreda','četrtek','petek','sobota'];
+
+      function updateStatus() {
+        const el = $('#topbar-status');
+        const banner = $('#day-banner');
+        if (!el) return;
+        const now = new Date();
+        const day = now.getDay();
+        const hour = now.getHours() + now.getMinutes() / 60;
+        const range = BUSINESS_HOURS[day];
+        const isOpen = !!(range && hour >= range[0] && hour < range[1]);
+        el.classList.toggle('is-closed', !isOpen);
+        const label = el.querySelector('.top-bar__status-label');
+        if (label) label.textContent = isOpen ? 'Odprto' : 'Zaprto';
+        if (banner) {
+          if (DAY_BANNERS[day]) banner.textContent = DAY_BANNERS[day];
+          else banner.textContent = `Vikend — pokličite v ponedeljek od 9:00`;
+        }
+      }
+      updateStatus();
+      setInterval(updateStatus, 5 * 60 * 1000);
+
+      /* Reveal on scroll */
+      const reveals = $$('.reveal');
+      if ('IntersectionObserver' in window && reveals.length) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-revealed');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        reveals.forEach(el => io.observe(el));
+      } else {
+        reveals.forEach(el => el.classList.add('is-revealed'));
+      }
+
+      /* Counter animation */
+      function animateCounter(el) {
+        if (el.dataset.counted === '1') return;
+        el.dataset.counted = '1';
+        const target = parseInt(el.dataset.target, 10) || 0;
+        const suffix = el.dataset.suffix || '';
+        const duration = 1400;
+        const start = performance.now();
+        function step(now) {
+          const t = Math.min(1, (now - start) / duration);
+          const eased = 1 - Math.pow(1 - t, 3);
+          el.textContent = Math.round(target * eased) + suffix;
+          if (t < 1) requestAnimationFrame(step);
+          else el.textContent = target + suffix;
+        }
+        requestAnimationFrame(step);
+      }
+      const counters = $$('[data-counter]');
+      if ('IntersectionObserver' in window && counters.length) {
+        const cio = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              animateCounter(entry.target);
+              cio.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.4 });
+        counters.forEach(el => cio.observe(el));
+      } else {
+        counters.forEach(el => animateCounter(el));
+      }
+
+      /* Nav active link via IO */
+      const sections = ['storitve','postopek','portfelj','mnenja','cenik','kontakt']
+        .map(id => document.getElementById(id)).filter(Boolean);
+      const navLinks = $$('[data-nav-link]');
+      if ('IntersectionObserver' in window && sections.length && navLinks.length) {
+        const navIO = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const id = entry.target.id;
+              navLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === `#${id}`));
+            }
+          });
+        }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+        sections.forEach(s => navIO.observe(s));
+      }
+
+      /* Carousel */
+      const track = $('#carousel-track');
+      const dotsEl = $('#carousel-dots');
+      const prevBtn = $('#carousel-prev');
+      const nextBtn = $('#carousel-next');
+      if (track && dotsEl && prevBtn && nextBtn) {
+        const slides = $$('.carousel__slide', track);
+        let idx = 0;
+        slides.forEach((_, i) => {
+          const d = document.createElement('button');
+          d.type = 'button';
+          d.className = 'carousel__dot' + (i === 0 ? ' is-active' : '');
+          d.setAttribute('aria-label', `Mnenje ${i+1} od ${slides.length}`);
+          d.addEventListener('click', () => goTo(i));
+          dotsEl.appendChild(d);
+        });
+        const dotEls = $$('.carousel__dot', dotsEl);
+        function goTo(i) {
+          idx = (i + slides.length) % slides.length;
+          track.style.transform = `translateX(-${idx * 100}%)`;
+          dotEls.forEach((d, j) => d.classList.toggle('is-active', j === idx));
+        }
+        prevBtn.addEventListener('click', () => goTo(idx - 1));
+        nextBtn.addEventListener('click', () => goTo(idx + 1));
+
+        // Auto-advance every 7s; pause on hover/focus
+        let timer = setInterval(() => goTo(idx + 1), 7000);
+        const pause = () => { clearInterval(timer); };
+        const resume = () => { timer = setInterval(() => goTo(idx + 1), 7000); };
+        const carousel = $('#carousel');
+        if (carousel) {
+          carousel.addEventListener('mouseenter', pause);
+          carousel.addEventListener('mouseleave', resume);
+          carousel.addEventListener('focusin', pause);
+          carousel.addEventListener('focusout', resume);
+        }
+      }
+
+      /* Pricing toggle */
+      const monthlyBtn = $('#pricing-toggle-monthly');
+      const yearlyBtn = $('#pricing-toggle-yearly');
+      if (monthlyBtn && yearlyBtn) {
+        function setMode(mode) {
+          monthlyBtn.classList.toggle('is-active', mode === 'monthly');
+          yearlyBtn.classList.toggle('is-active', mode === 'yearly');
+          monthlyBtn.setAttribute('aria-pressed', String(mode === 'monthly'));
+          yearlyBtn.setAttribute('aria-pressed', String(mode === 'yearly'));
+          $$('[data-price]').forEach(el => {
+            const num = el.querySelector('.pricing-card__price-num');
+            const sub = el.querySelector('.pricing-card__price-sub');
+            if (!num || !sub) return;
+            num.textContent = el.dataset[mode];
+            sub.textContent = mode === 'monthly' ? '/mesec' : '/mesec ob letnem plačilu';
+          });
+        }
+        monthlyBtn.addEventListener('click', () => setMode('monthly'));
+        yearlyBtn.addEventListener('click', () => setMode('yearly'));
+      }
+
+      /* Button ripple */
+      $$('[data-ripple]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const rect = btn.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+          const x = (e.clientX || rect.left + rect.width / 2) - rect.left - size / 2;
+          const y = (e.clientY || rect.top + rect.height / 2) - rect.top - size / 2;
+          const ripple = document.createElement('span');
+          ripple.className = 'ripple';
+          ripple.style.width = ripple.style.height = size + 'px';
+          ripple.style.left = x + 'px';
+          ripple.style.top  = y + 'px';
+          btn.appendChild(ripple);
+          setTimeout(() => ripple.remove(), 700);
+        });
+      });
+
+      /* Lightbox */
+      const lightbox = $('#lightbox');
+      const lightboxImg = $('#lightbox-img');
+      const lightboxCap = $('#lightbox-caption');
+      const lightboxClose = $('#lightbox-close');
+      const lightboxPrev = $('#lightbox-prev');
+      const lightboxNext = $('#lightbox-next');
+      const galleryItems = $$('.gallery-item');
+      let lbIdx = -1, lbLast = null;
+
+      function openLB(i) {
+        if (!lightbox || i < 0 || i >= galleryItems.length) return;
+        const item = galleryItems[i];
+        lbIdx = i;
+        lightboxImg.src = item.getAttribute('data-lb-src');
+        lightboxImg.alt = item.getAttribute('data-lb-caption') || '';
+        lightboxCap.textContent = item.getAttribute('data-lb-caption') || '';
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('is-locked');
+        lbLast = document.activeElement;
+        lightboxClose.focus();
+      }
+      function closeLB() {
+        if (!lightbox) return;
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('is-locked');
+        lightboxImg.src = '';
+        if (lbLast && lbLast.focus) lbLast.focus();
+        lbIdx = -1;
+      }
+      function step(d) { if (lbIdx < 0) return; openLB((lbIdx + d + galleryItems.length) % galleryItems.length); }
+
+      galleryItems.forEach((it, i) => it.addEventListener('click', () => openLB(i)));
+      if (lightboxClose) lightboxClose.addEventListener('click', closeLB);
+      if (lightboxPrev) lightboxPrev.addEventListener('click', () => step(-1));
+      if (lightboxNext) lightboxNext.addEventListener('click', () => step(1));
+      if (lightbox) lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLB(); });
+      document.addEventListener('keydown', (e) => {
+        if (!lightbox || !lightbox.classList.contains('is-open')) return;
+        if (e.key === 'Escape') closeLB();
+        if (e.key === 'ArrowLeft') step(-1);
+        if (e.key === 'ArrowRight') step(1);
+      });
+
+      /* Contact form — success animation */
+      const form = $('#contact-form');
+      const success = $('#form-success');
+      if (form && success) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = form.elements['name'].value.trim();
+          const email = form.elements['email'].value.trim();
+          const message = form.elements['message'].value.trim();
+          if (!name || !email || !message) {
+            alert('Prosimo, izpolnite vsa zahtevana polja.');
+            return;
+          }
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert('Vnesite veljaven e-naslov.');
+            return;
+          }
+          success.classList.add('is-visible');
+          form.reset();
+        });
+      }
+
+      /* Newsletter — quick visual confirmation */
+      const newsletter = $('#newsletter-form');
+      if (newsletter) {
+        newsletter.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const input = newsletter.querySelector('input[name="email"]');
+          if (!input) return;
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim())) return;
+          const submit = newsletter.querySelector('button[type="submit"]');
+          if (submit) {
+            submit.textContent = 'Prijavljeni ✓';
+            submit.disabled = true;
+            input.disabled = true;
+          }
+        });
+      }
+
+    })();
+  </script>
+
+  <!-- PREDOGLED: badge intentionally omitted — final-state demo subdomain. -->
+</body>
+</html>

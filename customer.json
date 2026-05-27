@@ -1,0 +1,21 @@
+{
+  "slug": "modern-pregosystems",
+  "name": "Prego Systems — Modern demo",
+  "canonical": "modern.pregosystems.com",
+  "style_anchor": "modern",
+  "intensity_level": 2,
+  "kind": "internal_demo",
+  "language": "sl",
+  "industry": "web_design_agency",
+  "city": "Kamnik",
+  "phone": "031 271 317",
+  "email": "info@pregosystems.com",
+  "address": "Jakopičeva ulica 20, 1241 Kamnik",
+  "lime_booking_url": "https://form.lime-booking.com/en/lime-demo-saloni/location",
+  "palette": "cool-minimalist",
+  "fonts": {
+    "display": "Outfit",
+    "body": "DM Sans"
+  },
+  "predogled_badge": false
+}
